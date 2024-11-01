@@ -1,0 +1,8 @@
+[package]
+name = "moonmath_excercieses"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-ff = "0.5.0"
+ark-ec = "0.5.0"
