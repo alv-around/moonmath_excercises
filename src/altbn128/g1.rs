@@ -14,7 +14,6 @@ pub struct Config;
 pub const G1_GENERATOR_X: Fq = ark_ff::MontFp!("1");
 pub const G1_GENERATOR_Y: Fq = ark_ff::MontFp!("2");
 
-// TODO: update curve config
 impl CurveConfig for Config {
     type BaseField = Fq;
     type ScalarField = Fr;
