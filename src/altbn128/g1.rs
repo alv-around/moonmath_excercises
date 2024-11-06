@@ -18,11 +18,10 @@ impl CurveConfig for Config {
     type BaseField = Fq;
     type ScalarField = Fr;
 
-    /// COFACTOR = (x - 1)^2 / 3  = 76329603384216526031706109802092473003
+    /// COFACTOR = 1
     const COFACTOR: &'static [u64] = &[0x1, 0x0];
 
-    /// COFACTOR_INV = COFACTOR^{-1} mod r
-    /// = 52435875175126190458656871551744051925719901746859129887267498875565241663483
+    /// COFACTOR_INV = COFACTOR^{-1} mod r = 1
     #[rustfmt::skip]
     const COFACTOR_INV: Fr = ark_ff::MontFp!("1");
 }
